@@ -20,163 +20,387 @@ a {
   color: inherit;
 }
 
-header, nav, section, .image, .avis {
-    padding: 10px 20%;
+header,
+nav,
+section,
+.image,
+.avis,
+.bas-de-page,
+.offres,
+.mentions,
+.newsletter {
+  padding: 10px 20%;
 }
 
 /* navigation !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #0b2033;
-    font-size: 15px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b2033;
+  font-size: 15px;
 }
 
-ul{
-    display: flex;
+nav a {
+  transition: color 0.5s ease;
 }
 
-li{
-    margin: 0 10px;
-    color: white;
+nav a:hover {
+  color: #e8b917;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+  color: white;
 }
 
 /* header !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.headerleft{
-    display: flex;
-    align-items: center;
+.headerleft {
+  display: flex;
+  align-items: center;
 }
 
-.headerleft a{
-    color: rgb(80, 80, 233);
+.headerleft a {
+  color: rgb(80, 80, 233);
 }
-.headerright a{
-    color: rgb(80, 80, 233);
+.headerright a {
+  color: rgb(80, 80, 233);
 }
 
 /* section !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-section{
-    background-image: url(./img/bg.jpg);
-    color: white;
-    background-position: center;
+section {
+  background-image: url(./img/bg.jpg);
+  color: white;
+  background-position: center;
 }
 
-.titre{
-    text-align: center;
+.titre {
+  text-align: center;
 }
 
-h1{
-    font-size: 70px;
-    margin-top: 15px;
+h1 {
+  font-size: 70px;
+  margin-top: 15px;
 }
 
-h3 a{
-    text-decoration: underline;
+h3 a {
+  text-decoration: underline;
 }
 
-h1, h3{
-    text-shadow: 0 0 4px white;
+h1,
+h3 {
+  text-shadow: 0 0 4px white;
 }
 
 /* formulaire !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-form{
-    margin-top: 15px;
-    padding: 60px 150px;
-    display: flex;
-    flex-direction: column;
+form {
+  margin-top: 15px;
+  padding: 60px 150px;
+  display: flex;
+  flex-direction: column;
 }
 
-.form1,.form2, .form3, .form4{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+.form1,
+.form2,
+.form3,
+.form4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
-legend{
-    font-weight: bold;
-    margin-bottom: 10px;
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.date{
-    width: 24%;
+.date {
+  width: 24%;
 }
 
-.lieu{
-    width: 32%;
+.lieu {
+  width: 32%;
 }
 
-.btn-jaune{
-    background-color: #e8b917;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid black;
-    color: #000;
-    font-weight: bold;
+.btn-jaune {
+  background-color: #e8b917;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: #000;
+  font-weight: bold;
 }
 
-input{
-    height: 40px;
+input {
+  height: 40px;
 }
 
-#check1, #check2{
-height: initial;
+#check1,
+#check2 {
+  height: initial;
 }
 
 /* logo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.logo{
-    display: flex;
-   background-color:  #f4f7fa;
+.logo {
+  display: flex;
+  background-color: #f4f7fa;
 }
 
-.logo img{
-    margin: 0 10px;
+.logo img {
+  margin: 0 10px;
 }
 
-.image{
-    display: flex;
-    position: relative;
+.image {
+  display: flex;
+  position: relative;
 }
 
-.abs{
-    position: absolute;
-    right: 400px;
-    top: -70px;
+.abs {
+  position: absolute;
+  right: 400px;
+  top: -70px;
 }
 
 /* avis!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.avis{
-    display: flex;
-    
+.avis {
+  display: flex;
 }
 
-.etoiles{
-    background-color: #e8ecf0;
-    text-align: center;
-    height: 150px;
-    padding: 10px;
-    margin: 10px;
-    width: 50%;
+.etoiles {
+  background-color: #e8ecf0;
+  text-align: center;
+  height: 150px;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
 }
 
-.star{
-    color: #e8b917;
+.star {
+  color: #e8b917;
 }
 
-.res{
-    width: 100%;
-    color: white;
-    display: flex;
-    background-color: #0b2033;
+.res {
+  margin: 10px;
+  width: 100%;
+  color: white;
+  display: flex;
+  background-color: #0b2033;
+  padding: 10px;
 }
 
+.fa-check-circle {
+  color: #e8b917;
+}
+
+/* bas de page !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.bas-de-page {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  color: #0b2033;
+}
+
+.trois-images {
+  display: flex;
+  border-bottom: 3px solid #e8b917;
+}
+/* images 1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.image1 {
+  width: 33%;
+  height: 200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/img1.jpg);
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image1:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./img/img1.jpg);
+}
+
+.image1 p {
+  color: white;
+  border-bottom: 4px solid #e8b917;
+  text-shadow: 0 0 6px #969b9f;
+  font-size: 25px;
+}
+
+/* image 2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.image2 {
+  width: 33%;
+  height: 200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/img2.jpg);
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.image2:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./img/img2.jpg);
+}
+
+/* image 3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.image3 {
+  width: 33%;
+  height: 200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/img3.jpg);
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image3:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(./img/img3.jpg);
+}
+
+.image3 p {
+  color: white;
+  border-bottom: 4px solid #e8b917;
+  text-shadow: 0 0 6px #969b9f;
+  font-size: 25px;
+}
+
+/* offres !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.offres {
+  display: flex;
+}
+
+.offres h3 {
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.offres-gauche {
+  width: 50%;
+  margin: 10px;
+}
+
+.villes-gauche,
+.villes li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.villes ul {
+  width: 50%;
+  margin: 10px;
+}
+
+.villes {
+  color: #3089e0;
+}
+
+.mentions {
+  text-align: end;
+  color: #657a7f;
+  font-weight: 200;
+}
+
+/* newsletter !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.newsletter {
+  border-top: 1px solid #e8ecf0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news {
+  font-weight: bold;
+}
+
+.mail {
+  width: 300px;
+  border: 2px solid rgb(216, 215, 215);
+  padding: 10px;
+}
+
+.btn-mail {
+  background-color: #0b2033;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #e8b917;
+}
+
+/* foot !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.foot-bleu {
+  background-color: #0b2033;
+  color: white;
+}
+
+.foot,
+footer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot a:hover,
+footer a:hover {
+  color: #e8b917;
+}
+
+.foot h4 {
+  padding-top: 15px;
+}
+
+.ul,
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  color: #969b9f;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.margin {
+  margin-right: 100px;
+}
+
+/* footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.footer {
+  background-color: #06131e;
+  padding-bottom: 50px;
+}
+
+.copyright p {
+  margin: 0 10px;
+}
+
+.reseaux {
+  color: white;
+  padding: 20px;
+  font-size: 35px;
+}
