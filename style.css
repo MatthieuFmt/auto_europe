@@ -23,7 +23,7 @@ a {
 header,
 nav,
 section,
-.image,
+.logo,
 .avis,
 .bas-de-page,
 .offres,
@@ -42,7 +42,7 @@ nav {
 }
 
 nav a {
-  transition: color 0.5s ease;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -79,6 +79,7 @@ nav ul li {
 
 .ul-toggle li a {
   color: #000;
+  white-space: nowrap;
 }
 
 .ul-toggle li {
@@ -95,6 +96,10 @@ nav ul li {
   position: absolute;
   top: -21px;
   left: 15px;
+}
+
+li a {
+  white-space: nowrap;
 }
 
 /* header !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -196,22 +201,19 @@ input {
 .logo {
   display: flex;
   background-color: #f4f7fa;
+  display: flex;
+  position: relative;
+  margin: 20px 0;
 }
 
 .logo img {
   margin: 0 10px;
 }
 
-.image {
-  display: flex;
-  position: relative;
-  margin: 12px;
-}
-
 .abs {
   position: absolute;
-  right: 400px;
-  top: -70px;
+  right: 320px;
+  top: -85px;
 }
 
 /* avis!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
